@@ -1,36 +1,27 @@
 package by.academy.classwork.lesson4;
 
 //method bubble
-import java.util.Random;
+
+import java.util.Arrays;
 
 public class Array2 {
 
 	public static void main(String[] args) {
 
-		int arr[] = new int[10];
-		Random rand = new Random();
+		int[] arr = { 3, 7, 2, 1, 9 };
+		int temp = Integer.MAX_VALUE;
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = rand.nextInt(10);
-			System.out.println(arr[i] + " ");
-		
-			for(i = 0; i < arr.length; i++) {
-				int temp;
-				for (int n = 0; n < arr.length; n++) {
-
+			for (int j = i; j < arr.length; j++) {
+				if (arr[i] > arr[j]) {
 					temp = arr[i];
-					arr[i] = arr[n];
-					arr[n] = temp;
+					arr[i] = arr[j];
+					arr[j] = temp;
 				}
-
 			}
-
 		}
-	
-		
 
-		for ( i : arr) {
+		System.out.println(Arrays.toString(arr));
 
-			System.out.println(i + " ");
-		}
 	}
+
 }

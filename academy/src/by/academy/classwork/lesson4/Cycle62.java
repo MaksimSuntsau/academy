@@ -21,16 +21,11 @@ public class Cycle62 {
 		scan.close();
 		
 		scan2.close();
-			
-		double result = s + s * 3 / 100;
-		
+					
 		for (int i = 0; i <= n; i++) {
 			
 			s+=(s*0.03);
-			
-			
-			
-			
+							
 		}
 		
 		System.out.println(" Summa vklada cherez " + n + " let ravna: " + s);
