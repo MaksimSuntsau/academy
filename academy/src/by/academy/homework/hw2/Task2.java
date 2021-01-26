@@ -23,7 +23,7 @@ public class Task2 {
 		case "double":
 			
 			double vDub = scan.nextDouble();
-			System.out.println(vDub * 0.07);
+			System.out.println(vDub * 0.7);
 			break;
 		case "float":
 			
