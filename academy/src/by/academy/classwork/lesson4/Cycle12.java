@@ -6,7 +6,7 @@ public class Cycle12 {
 
 		long n = 1;
 
-		for (int i = 10; i <= 99; i++) {
+		for (int i = 11; i <= 99; i+=2) {
 
 			if (i % 13 == 0) {
 
