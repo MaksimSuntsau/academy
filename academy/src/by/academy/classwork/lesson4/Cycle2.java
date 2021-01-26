@@ -6,7 +6,7 @@ public class Cycle2 {
 
 	public static void main(String[] args) {
 
-		System.out.print("Vvedite chslo n : ");
+		System.out.print("Enter number n : ");
 
 		Scanner scan = new Scanner(System.in);
 
@@ -21,7 +21,7 @@ public class Cycle2 {
 			result += i;
 
 		}
-		System.out.println("Summa chisel ot 1 do " + n + " = " +result);
+		System.out.println("Sum of numbers from 1 to " + n + " = " +result);
 
 	}
 }

@@ -8,7 +8,7 @@ public class Cycle1 {
 
 		while (i <= 20) {
 
-			System.out.println("Kvadrat chisla " + i + " = " + i * i);
+			System.out.println("Square of number " + i + " = " + (int)Math.pow(i, 2));
 
 			i++;
 		}

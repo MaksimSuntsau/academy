@@ -6,7 +6,7 @@ public class Cycle3 {
 
 	public static void main(String[] args) {
 
-		System.out.print("Vvedite chislo n : ");
+		System.out.print("Enter number n: ");
 
 		Scanner scan = new Scanner(System.in);
 
@@ -22,7 +22,7 @@ public class Cycle3 {
 
 		}
 
-		System.out.println("Proizvedenie chisel ot 1 do " + n + " = " +result);
+		System.out.println("Product of numbers from 1 to " + n + " = " + result);
 
 	}
 
