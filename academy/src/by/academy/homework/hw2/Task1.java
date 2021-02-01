@@ -1,56 +1,48 @@
 package by.academy.homework.hw2;
 
-	import java.util.Scanner;
+import java.util.Scanner;
 
-	public class Task1 {
+public class Task1 {
 
-		public static void main(String[] args) {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter line 1 to compare: ");
+		
+		String s1 = scan.nextLine();
+		
+		System.out.println("Enter line 2 to compare: ");
+		
+		String s2 = scan.nextLine();
 
-			System.out.print("Enter purchase amount : ");
+		if (s1.length() != s2.length()) {
+			
+			System.out.println("false");
+			
+		} else {
+			
+			int[] letters = new int[256];
 
-			Scanner scan = new Scanner(System.in);
-
-			double sum = scan.nextDouble();
-
-			System.out.print("Enter age : ");
-
-			int age = scan.nextInt();
-
-			scan.close();
-
-			if (sum < 100) {
-
-				System.out.println("Total including discount 5% : " + (sum - sum * 0.05));
+			char[] array = s1.toCharArray();
+			
+			for (char c : array) {
+				
+				letters[c]++;
 			}
 
-			if (sum >= 100 & sum < 200) {
-
-				System.out.println("Total including discount 7% : " + (sum - sum * 0.07));
-			}
-
-			if (sum >= 200 & sum < 300) {
-
-				System.out.println("Total including discount 12% : " + (sum - sum * 0.12));
-
-				if (age > 18) {
-
-					System.out.println("Bonus for majority +4% to discount : " + (sum - sum * 0.16));
-
-				} else {
-
-					System.out.println("Antibonus for minority -3% from discount: " + (sum - sum * 0.09));
+			for (int i = 0; i < s2.length(); i++) {
+				
+				int c = (int) s2.charAt(i);
+				
+				if (--letters[c] < 0) {
+					
+					System.out.println("false");
 				}
 			}
 
-			if (sum >= 300 & sum < 400) {
-
-				System.out.println("Total including discount 15% : " + (sum - sum * 0.15));
-			}
-
-			if (sum >= 400) {
-
-				System.out.println("Total including discount 20% : " + (sum - sum * 0.2));
-			}
-
+			System.out.println("true");
 		}
+		scan.close();
 	}
+}

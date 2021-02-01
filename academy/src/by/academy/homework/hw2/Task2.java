@@ -4,48 +4,55 @@ import java.util.Scanner;
 
 public class Task2 {
 
-	public static void main(String[] args) {
+	private static int uChars(String str) {
 
-		System.out.print("Vvedite tip dannich : ");
+		StringBuilder s = new StringBuilder();
+
+		String c;
+
+		for (int i = 0; i < str.length(); i++) {
+
+			c = String.valueOf(str.charAt(i));
+
+			if (s.indexOf(c) == -1)
+
+				s.append(c);
+		}
+
+		return s.length();
+	}
+
+	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 
-		String type = scan.nextLine();
+		System.out.println("Enter the quantity of words: ");
 
-		System.out.print("Vvedite peremennuyu : ");
+		int n = scan.nextInt();
 
-		switch (type) {
-		case "int":
-			
-			int vInt = scan.nextInt();
-			System.out.println(vInt % 2);
-			break;
-		case "double":
-			
-			double vDub = scan.nextDouble();
-			System.out.println(vDub * 0.7);
-			break;
-		case "float":
-			
-			float vFl = scan.nextFloat();
-			System.out.println(vFl * vFl);
-			break;
-		case "char":
-			
-			int vCh = scan.nextInt();
-			System.out.println((char) vCh);
-			break;
-		case "String":
-			
-			String vSt = scan.nextLine();
-			System.out.println("Hello " + vSt);
-			break;
+		scan.nextLine();
 
-		default:
-			System.out.println("Unsupported type");
+		String a[] = new String[n];
+
+		System.out.println("Enter words: ");
+
+		for (int i = 0; i < a.length; i++) {
+
+			a[i] = scan.nextLine();
 		}
+
+		String target = a[0];
+
+		for (int i = 0; i < a.length; i++) {
+
+			if (uChars(a[i]) < uChars(target))
+				target = a[i];
+		}
+
+		System.out.println("Target word: " + target);
+
+		System.out.println("Quantity of different symbols: " + uChars(target));
 
 		scan.close();
 	}
 }
-

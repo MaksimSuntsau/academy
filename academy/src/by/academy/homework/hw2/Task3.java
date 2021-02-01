@@ -6,21 +6,21 @@ public class Task3 {
 
 	public static void main(String[] args) {
 
-		System.out.print("Vvedite chislo ot 1 do 10 : ");
-
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter two words with an even number of letters :");
+		String a = scan.nextLine();
+		String b = scan.nextLine();
 
-		int number = scan.nextInt();
+		if (a.length() % 2 != 0 && a.length() % 2 != 0) {
 
+			System.out.println("You entered words with an odd number of letters. Try again.");
+
+		} else {
+			String c = (a.substring(0, a.length() / 2) + b.substring(b.length() / 2));
+			System.out.println(c);
+		}
 		scan.close();
 
-		int i = 0;
-
-		while (i < 10) {
-
-			i++;
-
-			System.out.println(number + " x " + i + " = " + (number * i));
-		}
 	}
+
 }
