@@ -8,7 +8,7 @@ public class Task19 {
 			
 			for (int j = 10; j < 100; j++) {
 				
-				if ((i * 100 + j) % (i * j) == 00) {
+				if ((i * 100 + j) % (i * j) == 0) {
 					
 					System.out.println("Chilo i: " + i + " Chislo j: " + j);
 					
