@@ -14,5 +14,6 @@ public @interface Manufacturer {
 	String country();
 
 	String founderFullName();
+	
 
 }

@@ -23,4 +23,5 @@ public class BelarussianPhoneValidator implements Validator {
 				"The number +37525987655434534 is " + (v.isValid("+37525987655434534") == true ? "valid" : "invalid"));
 
 	}
+	
 }

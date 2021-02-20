@@ -20,4 +20,6 @@ public class Cheese extends Product {
 		return 1;
 	}
 
+	
+	
 }

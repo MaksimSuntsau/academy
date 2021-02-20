@@ -22,5 +22,6 @@ public class Vine extends Product {
 			return 0.9;
 		return 1;
 	}
+	
 
 }

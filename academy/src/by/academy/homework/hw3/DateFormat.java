@@ -28,6 +28,8 @@ public class DateFormat {
 		}
 
 	}
+	
+	
 
 	public static boolean CheckFormat(String datePattern, String date) {
 

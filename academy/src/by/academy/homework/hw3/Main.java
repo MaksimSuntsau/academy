@@ -32,7 +32,8 @@ public class Main {
 
 		deal.printProducts();
 
-//		Product[] products = deal.getProducts();
+		
+		
 	}
 
 	public static void inputProduct(int num, Deal deal) {

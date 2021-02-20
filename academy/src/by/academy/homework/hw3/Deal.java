@@ -24,7 +24,7 @@ public class Deal implements DealInterface {
 		this.buyer = buyer;
 		this.seller = seller;
 		this.deadline = deadline;
-//		this.products = products;
+
 	}
 
 	public LocalDate getDate() {
@@ -215,7 +215,6 @@ public class Deal implements DealInterface {
 			printProducts();
 
 		}
-		scan.close();
 
 	}
 }

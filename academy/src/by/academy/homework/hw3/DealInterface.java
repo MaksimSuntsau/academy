@@ -9,4 +9,5 @@ public interface DealInterface {
 	void addProduct(Product product);
 
 	void deleteProduct(String s);
+	
 }
