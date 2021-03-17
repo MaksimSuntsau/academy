@@ -3,6 +3,17 @@ package by.academy.homework.hw5;
 import java.util.Iterator;
 
 public class IteratorTwoDimArray<T> implements Iterator<T> {
+	
+	public static void main(String[] args) {
+
+		Integer[][] arr = { { 1, 6 }, { 9, 8 }, { 1, 5, 8 } };
+
+		IteratorTwoDimArray<Integer> iterator = new IteratorTwoDimArray<>(arr);
+
+		while (iterator.hasNext()) {
+			System.out.print(iterator.next() + " ");
+		}
+	}
 
 	private T[][] array;
 	private int curLine, curColumn;
@@ -27,9 +38,9 @@ public class IteratorTwoDimArray<T> implements Iterator<T> {
 	@Override
 	public T next() {
 		T arr = array[curLine][curColumn++];
-		
+
 		if (curColumn >= array[curLine].length) {
-			
+
 			curLine++;
 			curColumn = 0;
 		}

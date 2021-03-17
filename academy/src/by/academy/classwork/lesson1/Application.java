@@ -31,7 +31,10 @@ public class Application {
 		System.out.println(cat.getInitials());
 
 		cat.setHomeAnimal(false);
-		System.out.println(cat.isHomeAnimal());
+		System.out.println(cat.isHomeAnimal()+"\n"+"\n"+ "finish");
+		
+		
+		
 
 	}
 

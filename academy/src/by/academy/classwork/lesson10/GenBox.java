@@ -1,8 +1,9 @@
 package by.academy.classwork.lesson10;
 
-public class GenBox<T> {
+public class GenBox<T,V,K> {
 	
 	 T item;
+	
 	
 	public GenBox(T item) {
 				

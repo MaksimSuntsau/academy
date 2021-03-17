@@ -32,8 +32,6 @@ public class Main {
 
 		deal.printProducts();
 
-		
-		
 	}
 
 	public static void inputProduct(int num, Deal deal) {

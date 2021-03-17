@@ -23,6 +23,5 @@ public class EmailValidator implements Validator {
 		System.out.println("The Email address nastya.r.824@gmail.com is "
 				+ (v.isValid("nastya.r.824gmail.com") == true ? "valid" : "invalid"));
 	}
-	
 
 }

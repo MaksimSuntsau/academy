@@ -22,5 +22,5 @@ public class AmericanPhoneValidator implements Validator {
 		System.out.println("The number +19253652 is " + (v.isValid("+19253652") == true ? "valid" : "invalid"));
 
 	}
-	
+
 }
